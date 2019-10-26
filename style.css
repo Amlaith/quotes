@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: #88b;
+}
+#quote-box {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "quote quote quote"
+    ". . author"
+    "share . new";
+  box-sizing: border-box;
+  background-color: #ccf;
+  width: 450px;
+  padding: 30px 30px 15px;
+  border-radius: 10px;
+}
+
+#text{
+  grid-area: quote;
+  font-size: 3em;
+  margin: 8px;
+  color: #88b;
+}
+#author{
+  grid-area: author;
+  font-size: 1.5em;
+  text-align: right;
+  color: #88b;
+}
+#new-quote{
+  grid-area: new;
+  justify-self: end;
+  /* width: auto; */
+}
+#share{
+  grid-area: share;
+  /* border: 1px solid; */
+  justify-self: start;
+  /* position: absolute;
+  bottom: 10px;
+  right: 20px; */
+}
+#tweet-quote{
+  margin-right: 5px;
+}
+button{
+  background-color: #88b;
+  color: #ccf;
+}
