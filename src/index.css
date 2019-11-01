@@ -13,7 +13,7 @@ body{
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: magenta;
+  background-color: #88b;
 }
 #quote-box {
   display: grid;
@@ -60,4 +60,10 @@ body{
 button{
   background-color: #88b;
   color: #ccf;
+}
+.testt{
+  width: 100px;
+  height: 100px;
+  background-color: #abc;
+  z-index: 100;
 }
