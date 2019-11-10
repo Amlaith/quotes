@@ -6,6 +6,9 @@
   margin: 0;
   padding: 0;
   position: relative;
+  -webkit-transition: all 5s ease;
+  -o-transition: all 5s ease;
+  transition: all 5s ease;
 }
 body{
   height: 100vh;
@@ -17,7 +20,7 @@ body{
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   font-size: 16px;
 }
 #quote-box {
@@ -28,7 +31,7 @@ body{
     ". . author"
     "share . new";
   box-sizing: border-box;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   width: 450px;
   padding: 30px 30px 15px;
   border-radius: 10px;
@@ -38,12 +41,12 @@ body{
   grid-area: quote;
   font-size: 28px;
   margin: 8px;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 #author{
   grid-area: author;
   text-align: right;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 #new-quote{
   grid-area: new;
@@ -62,12 +65,6 @@ body{
   margin-right: 5px;
 }
 button{
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-}
-.testt{
-  width: 100px;
-  height: 100px;
-  background-color: #abc;
-  z-index: 100;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }

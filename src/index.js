@@ -213,7 +213,8 @@ class Quote extends React.Component {
     {
            "quote":"If you can dream it, you can achieve it.","author":"Zig Ziglar"}
     ],
-    "colors": [['#E0BBE4', '#c37ecb'], ['#957DAD', '#714d94'], ['#D291BC', '#b95b9a'], ['#FEC8D8', '#e587a3'], ['#FFDFD3', '#e6a790']],
+    // "colors": [['#E0BBE4', '#c37ecb'], ['#957DAD', '#714d94'], ['#D291BC', '#b95b9a'], ['#FEC8D8', '#e587a3'], ['#FFDFD3', '#e6a790']],
+    "colors": [['green', 'blue'],['red', 'orange']],
     "currentQuote": '',
     "currentAuthor": '',
     "currentColor": 0
@@ -226,11 +227,11 @@ class Quote extends React.Component {
     this.setState({
       "currentQuote": this.state["quotes"][index]["quote"],
       "currentAuthor": this.state["quotes"][index]["author"],
-      "currentColor": (this.state["currentColor"] + 1) % 5
+      "currentColor": (this.state["currentColor"] + 1) % 2
     })
 
-    document.documentElement.style.setProperty("--primary-color", this.state["colors"][this.state["currentColor"]][1])
-    document.documentElement.style.setProperty("--secondary-color", this.state["colors"][this.state["currentColor"]][0])
+    document.documentElement.style.cssText = `--primary-color: ${this.state["colors"][this.state["currentColor"]][1]}; --secondary-color: ${this.state["colors"][this.state["currentColor"]][0]}`
+    // document.documentElement.style.setProperty("--secondary-color", this.state["colors"][this.state["currentColor"]][0])
   }
 
   componentDidMount() {
