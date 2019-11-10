@@ -1,3 +1,7 @@
+:root{
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
 *{
   margin: 0;
   padding: 0;
@@ -13,7 +17,7 @@ body{
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: #88b;
+  background-color: var(--primary-color);
   font-size: 16px;
 }
 #quote-box {
@@ -24,7 +28,7 @@ body{
     ". . author"
     "share . new";
   box-sizing: border-box;
-  background-color: #ccf;
+  background-color: var(--secondary-color);
   width: 450px;
   padding: 30px 30px 15px;
   border-radius: 10px;
@@ -34,12 +38,12 @@ body{
   grid-area: quote;
   font-size: 28px;
   margin: 8px;
-  color: #88b;
+  color: var(--primary-color);
 }
 #author{
   grid-area: author;
   text-align: right;
-  color: #88b;
+  color: var(--primary-color);
 }
 #new-quote{
   grid-area: new;
@@ -58,8 +62,8 @@ body{
   margin-right: 5px;
 }
 button{
-  background-color: #88b;
-  color: #ccf;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 .testt{
   width: 100px;

@@ -213,10 +213,10 @@ class Quote extends React.Component {
     {
            "quote":"If you can dream it, you can achieve it.","author":"Zig Ziglar"}
     ],
-    "colors": ['E0BBE4', '957DAD', 'D291BC', 'FEC8D8', 'FFDFD3'],
+    "colors": ['#E0BBE4', '#957DAD', '#D291BC', '#FEC8D8', '#FFDFD3'],
     "currentQuote": '',
     "currentAuthor": '',
-    "currentColor": -1
+    "currentColor": 0
     }
     this.getQuote = this.getQuote.bind(this);
   }
@@ -226,8 +226,10 @@ class Quote extends React.Component {
     this.setState({
       "currentQuote": this.state["quotes"][index]["quote"],
       "currentAuthor": this.state["quotes"][index]["author"],
-      "currentColor": this.state["currentColor"] + 1
+      "currentColor": (this.state["currentColor"] + 1) % 5
     })
+
+    document.documentElement.style.setProperty("--primary-color", this.state["colors"][this.state["currentColor"]])
   }
 
   componentDidMount() {
