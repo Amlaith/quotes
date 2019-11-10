@@ -238,7 +238,7 @@ class Quote extends React.Component {
   }
 
   getTwitterLink() {
-    return encodeURI(`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=\"${this.state.currentQuote}\"\n${this.state.currentAuthor}\n#quotes`)
+    return encodeURI(`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text="${this.state.currentQuote}"\n${this.state.currentAuthor}\n#quotes`)
   }
 
   render() {
@@ -249,7 +249,7 @@ class Quote extends React.Component {
         <div id="author">- <span className="author">{this.state['currentAuthor']}</span></div>
         <button id="new-quote" className="btn btn-default" onClick={this.getQuote} >New quote</button>
         <div id="share">
-          <a href={this.getTwitterLink()} target="_blank">
+          <a href={this.getTwitterLink()} target="_blank" rel="noopener noreferrer">
             <button id="tweet-quote" className="btn btn-default"><i className="fab fa-twitter"></i></button>
           </a>
           <a href="#">
