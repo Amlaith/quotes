@@ -213,7 +213,7 @@ class Quote extends React.Component {
     {
            "quote":"If you can dream it, you can achieve it.","author":"Zig Ziglar"}
     ],
-    "colors": [['#E0BBE4', '#c37ecb'], ['#957DAD', '#714d94'], ['#D291BC', '#b95b9a'], ['#FEC8D8', '#e587a3'], ['#FFDFD3', '#e6a790']],
+    "colors": [['#E0BBE4', '#c37ecb'], ['#957DAD', '#714d94'], ['#D291BC', '#b95b9a'], ['#FEC8D8', '#e587a3'], ['#e4d5cc', '#cfa890']],
     "currentQuote": '',
     "currentAuthor": '',
     "currentColor": 0

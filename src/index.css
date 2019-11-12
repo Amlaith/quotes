@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   position: relative;
+  transition: all 1s linear;
 }
 body{
   height: 100vh;
@@ -28,6 +29,7 @@ body{
     ". . author"
     "share . new";
   box-sizing: border-box;
+  color: white;
   background-color: var(--secondary-color);
   width: 450px;
   padding: 30px 30px 15px;
@@ -38,12 +40,12 @@ body{
   grid-area: quote;
   font-size: 28px;
   margin: 8px;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
 }
 #author{
   grid-area: author;
   text-align: right;
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
 }
 #new-quote{
   grid-area: new;
@@ -62,7 +64,7 @@ body{
   margin-right: 5px;
 }
 button{
-  background-color: var(--primary-color);
+  background-color: white;
   color: var(--secondary-color);
 }
 .testt{
